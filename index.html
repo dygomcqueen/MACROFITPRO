@@ -1170,7 +1170,7 @@
 
     function openApiModal() {
       const savedKey = localStorage.getItem('macrofit_gemini_api_key') || '';
-      const savedModel = localStorage.getItem('macrofit_gemini_model') || 'gemini-2.5-flash';
+      const savedModel = localStorage.getItem('macrofit_gemini_model') || 'gemini-3.8-flash';
       document.getElementById('geminiApiKeyInput').value = savedKey;
       document.getElementById('geminiModelSelect').value = savedModel;
       document.getElementById('apiModal').classList.remove('hidden');
@@ -1281,7 +1281,7 @@
       statusMsg.textContent = 'Conectando con Gemini Vision...';
       statusMsg.classList.remove('hidden');
 
-      const preferredModel = localStorage.getItem('macrofit_gemini_model') || 'gemini-2.5-flash';
+      const preferredModel = localStorage.getItem('macrofit_gemini_model') || 'gemini-3.8-flash';
 
       const systemInstruction = `Eres un nutriólogo deportivo experto tipo Fitia.
 Analiza la imagen del plato o tabla nutricional y/o la descripción del usuario.
